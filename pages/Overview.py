@@ -66,26 +66,7 @@ def get_available_warehouses(role):
     return st.session_state['sdm'].get_available_warehouses(role)
 
 
-#################################
-#
-#   UI Builder
-#
-#################################
-# st.set_page_config(
-#      page_title="Snowpatrol - License Optimization",
-#      page_icon=":rotating_light:",
-#      layout="wide",
-#      initial_sidebar_state="expanded"
-# )
-#st.header(":rotating_light: Snowpatrol - License Optimization")
-#     # st.write("")
-#     st.header(":blue[OVERVIEW]")
 
-# colored_header(
-#                         label='',
-#                         description="",
-#                         color_name="blue-70",
-#                         )
 
 def init_session() -> Session:
     with st.form("snowflake_connection"):
