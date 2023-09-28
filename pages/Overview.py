@@ -21,9 +21,6 @@ import Revocations
 import Export_Data
 from st_clickable_images import clickable_images
 
-
-
-
 def build_snowpark_session(kwargs) -> Session:
     try:
         res=Session.builder.configs({
