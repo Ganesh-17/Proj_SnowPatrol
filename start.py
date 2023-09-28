@@ -11,9 +11,9 @@ from streamlit_extras.switch_page_button import switch_page
 project_home = Path(find_dotenv()).parent
 sys.path.append(str(project_home))
 
-# Set the page layout to be wide (call this only once, at the beginning)
-st.set_page_config(layout="wide",
-                   initial_sidebar_state="collapsed")
+# # Set the page layout to be wide (call this only once, at the beginning)
+# st.set_page_config(layout="wide",
+#                    initial_sidebar_state="collapsed")
 
 def build_snowpark_session(kwargs) -> Session:
     try:
